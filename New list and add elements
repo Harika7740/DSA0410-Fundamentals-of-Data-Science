@@ -1,0 +1,13 @@
+# Two original lists
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+# Create new list and add elements from list1
+new_list = []
+new_list.extend(list1)
+print("New list:", new_list)
+
+# Create a matrix from list1 and list2
+matrix = [list1, list2]
+print("Matrix:")
+print(matrix)
