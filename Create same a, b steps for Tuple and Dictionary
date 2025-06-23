@@ -1,0 +1,7 @@
+# a. Create a tuple
+t1 = (1, 2, 3)
+
+# b. Add elements from another tuple (creates a new tuple)
+t2 = (4, 5)
+new_tuple = t1 + t2
+print("New tuple:", new_tuple)
