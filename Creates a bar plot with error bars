@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+
+# Sample data
+means = [0.2474, 0.1235, 0.1737, 0.1824]
+std_devs = [0.3314, 0.2278, 0.2836, 0.2645]
+labels = ['A', 'B', 'C', 'D']
+
+# Create bar plot with error bars
+plt.bar(labels, means, yerr=std_devs, capsize=5, color='skyblue')
+
+# Add text labels above bars
+for i in range(len(means)):
+    plt.text(i, means[i] + 0.01, f'{means[i]:.3f}', ha='center')
+
+plt.title('Mean Velocity with Error Bars')
+plt.ylabel('Velocity')
+plt.show()
