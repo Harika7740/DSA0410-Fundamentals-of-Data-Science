@@ -1,0 +1,12 @@
+# Create a list
+nums = [10, 20, 30, 40, 50]
+
+# Manipulate the list
+nums.append(60)       # Add an element
+nums[1] = 25          # Change an element
+nums.remove(40)       # Remove an element
+
+# Slice the list
+print("Full list:", nums)
+print("First 3:", nums[:3])
+print("Last 2:", nums[-2:])
