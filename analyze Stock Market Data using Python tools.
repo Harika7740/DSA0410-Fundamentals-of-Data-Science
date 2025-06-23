@@ -1,0 +1,18 @@
+pip install yfinance
+import yfinance as yf
+
+# Download stock data for a company (e.g., Apple)
+data = yf.download('AAPL', start='2023-01-01', end='2023-12-31')
+
+# Show basic info
+print("Head of data:\n", data.head())
+
+# Simple analysis
+print("\nSummary Statistics:")
+print(data['Close'].describe())
+
+# Plot closing price
+import matplotlib.pyplot as plt
+data['Close'].plot(title='Apple Stock Closing Price')
+plt.ylabel('Price in USD')
+plt.show()
